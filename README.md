@@ -3,10 +3,10 @@
 
 github action大规模失效，mjj平均一人10鸡，以下可以部署到自己的小鸡上
 
-[color=Red]第一步下载下列代码[/color]
+第一步下载下列代码
 https://github.com/Jox2018/hostloc_getPoints/blob/main/hostloc_auto_get_points.py
 
-[color=Red]第二步把175，176行代码改为[/color]
+第二步把175，176行代码改为
 [code]    username = "账户"
     password = "密码"[/code]
 [color=Red]第三步上面文件上传到小鸡[/color]
