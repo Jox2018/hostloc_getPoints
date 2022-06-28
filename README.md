@@ -59,3 +59,23 @@ cd /root/hostloc/ && /usr/local/bin/python3 /root/hostloc/hostloc_auto_get_point
 env
 HOSTLOC_USERNAME=username1,username2...
 HOSTLOC_PASSWORD=password1,password2...
+
+# Docker部署方式
+
+## 简便
+
+```bash
+docker run --rm -it srcrs/hostloc:latest python hostloc_auto_get_points.py 用户名 密码
+```
+
+## 自建镜像
+
+构建自己的镜像
+
+```bash
+docker build -t docker用户名/镜像名称:版本 .
+#举例
+docker build -t srcrs/hostloc:1.0 .
+```
+
+运行和上面简便方式相同，只是替换镜像部分
